@@ -62,7 +62,7 @@ export default function Adm(){
     }
   
     const handleSubmitPrint = (event) => {
-        axios.get(`http://localhost:4000/user`);
+        axios.get(`https://pacific-reef-11550.herokuapp.com//user`);
     }
 
     return(

@@ -13,7 +13,7 @@ export default function ViewBusca() {
     const contatos = useSelector(state => state.contatos.dados)
     
     
-    const get = async () => await axios.get("http://localhost:4000/users")
+    const get = async () => await axios.get("https://pacific-reef-11550.herokuapp.com/users")
     useEffect(async ()=> {
         let response = await get()
         console.log(response.data)

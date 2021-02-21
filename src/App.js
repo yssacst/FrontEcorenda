@@ -29,6 +29,7 @@ export default function App() {
       <Body>
         <Switch>
           <Route path="/" component={ViewHome} exact/>
+          <Route path="/FrontEcorenda" component={ViewHome} exact/>
           <Route path="/buscar" component={ViewBusca} exact />
           <Route path="/agendamento" component={Agendamento} exact />
           <Route path="/entrar" component={ViewEntrar} exact />

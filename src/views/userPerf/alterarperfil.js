@@ -16,7 +16,7 @@ const AtualizarPerfil = () =>{
     const history = useHistory()
 
     useEffect(()=> {
-        axios.get(`http://localhost:4000/usersatt/email=${user.email}/senha=${user.senha}`)
+        axios.get(`https://pacific-reef-11550.herokuapp.com/usersatt/email=${user.email}/senha=${user.senha}`)
         .then(response => dispatch({type: 'ATT', payload: response.data[0]}))
     },[])
     
@@ -28,7 +28,7 @@ const AtualizarPerfil = () =>{
     /*envio Usuario*/
     const handleSubmitUsuario = (event) => {
         event.preventDefault()
-        axios.post(`http://localhost:4000/alterar/${user.id}`,usuario,{headers:heardes})
+        axios.post(`https://pacific-reef-11550.herokuapp.com/alterar/${user.id}`,usuario,{headers:heardes})
         .then(alert("Dados pessoais alterados com sucesso!"))
         .then(history.push("/perfil"))
         
@@ -37,14 +37,14 @@ const AtualizarPerfil = () =>{
         /*envio endereços*/
     const handleSubmitEndereco = (event) => {
         event.preventDefault()
-        axios.post(`http://localhost:4000/alterarenderecos/${user.id}`, endereco,{headers:heardes})
+        axios.post(`https://pacific-reef-11550.herokuapp.com/alterarenderecos/${user.id}`, endereco,{headers:heardes})
         .then(alert("Endereço alterado com sucesso!"))
         .then(history.push("/perfil"))
     }
         /*envio material*/
     const handleSubmitMaterial = (event) => {
         event.preventDefault()
-        axios.post('http://localhost:4000/users/cad', material,{headers:heardes})
+        axios.post('https://pacific-reef-11550.herokuapp.com/users/cad', material,{headers:heardes})
         .then(alert("Materiais atualizados!"))
         .then(history.push("/perfil"))
     }

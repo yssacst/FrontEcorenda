@@ -10,7 +10,7 @@ export default function UserPerf(props) {
     const dispatch = useDispatch()
 
     useEffect(()=> {
-        axios.get(`http://localhost:4000/usersatt/email=${user.email}/senha=${user.senha}`)
+        axios.get(`https://pacific-reef-11550.herokuapp.com/usersatt/email=${user.email}/senha=${user.senha}`)
         .then(response => dispatch({type: 'ATT', payload: response.data[0]}))
     },[])
     
