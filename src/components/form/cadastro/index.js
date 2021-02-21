@@ -24,7 +24,7 @@ export default function FormCadastro() {
 
    
     const handleSubmit = (event) => {
-        axios.post('http://localhost:4000/users/cad', usuario,{headers:heardes})
+        axios.post('https://pacific-reef-11550.herokuapp.com/users/cad', usuario,{headers:heardes})
         .then(alert("Cadastro efetuado com sucesso!"))
         }
      
