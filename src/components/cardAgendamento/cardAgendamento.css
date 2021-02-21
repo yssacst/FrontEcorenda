@@ -1,0 +1,83 @@
+.card-agendamento{
+    border-radius:5px;
+    margin:20px;
+    background-color:white;
+    padding:5px;
+    text-align:center;
+    color:var(--color-primary);
+    width: 240px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+.card-agendamento:hover{
+    box-shadow: 2px 3px 20px var(--color-primary);
+}
+.card-border-aluminio{
+    background-color: yellow;
+    color:black
+}
+.card-border-aluminio .title{
+    color:black;
+}
+.card-border-aluminio a{
+    color:black;
+}
+.card-border-aluminio .text-status{
+    color:black;
+    border:1px solid black;
+}
+.card-border-vidro{
+    background-color: green;
+    color:white
+}
+.card-border-papel{
+    background-color: blue;
+    color:white
+}
+.card-border-plastico{
+    background-color: red;
+    color:white
+}
+
+.title{
+    text-align:center;
+    font-size: 18px;
+    font-weight: bold;
+    color:white
+}
+
+.text-status{
+    font-weight: bold;
+    color:var(--color-title);
+    text-align:center;
+    overflow: hidden;
+    color:white;
+    border:1px solid white;
+}
+.status-confirmado, .status-concluido{
+    color:var(--color-title);
+}
+.status-pendente{
+    color:var(--color-alternate);
+}
+.status-cancelado{
+    color:white;
+    border:1px solid white;
+}
+.a-perfil{
+    text-decoration:none;
+    font-weight: bold;
+    color:white;
+
+}
+.a-perfil:hover{
+    background-color: white;
+}
+@media only screen and (max-width: 600px) {
+    .card-agendamento{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
+    }
+}

@@ -1,0 +1,41 @@
+#group-list-busca {
+    width: 100%;
+    padding: 30px 0;
+    background: var(--color-background);
+}
+/* mapbox */
+.view-mapbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width:80vw;
+    border:2px solid rgb(7, 112, 68);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+    overflow:hidden;
+}
+.title{
+    color:white;
+    text-align: center;
+    margin:5px;
+}
+.header-result-busca{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin:15px;
+}
+.btn-print{
+    padding: 3px;
+    background-color: white;
+    border:none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px;
+}
+.btn-print:hover{
+    cursor:pointer;
+    background-color:rgb(14, 97, 51);
+    color:white
+}
