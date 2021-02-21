@@ -24,7 +24,7 @@ export default function ViewMenu() {
 
     const handleExit = ()=> {
         dispatch({type: "LOGOUT", action: null})
-        history.push("/")
+        history.push("/FrontEcorenda")
     }
 
     return (

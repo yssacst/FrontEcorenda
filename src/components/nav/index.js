@@ -10,9 +10,9 @@ import './navbar.css'
 export function Navbar() {
     return (
         <nav>
-            <Link to="/"><HomeIcon /><br/>Inicio</Link>
-            <Link to="/buscar"><SearchIcon /><br/>Buscar</Link>
-            <Link to="/entrar"><AccountCircleIcon /><br/>Entrar</Link>
+            <Link to="/FrontEcorenda"><HomeIcon /><br/>Inicio</Link>
+            <Link to="/FrontEcorenda/buscar"><SearchIcon /><br/>Buscar</Link>
+            <Link to="/FrontEcorenda/entrar"><AccountCircleIcon /><br/>Entrar</Link>
             
         </nav>
     )
@@ -21,9 +21,9 @@ export function Navbar() {
 export function NavbarUser() {
     return (
         <nav>
-            <Link to="/user"><HomeIcon /><br/>Inicio</Link>
-            <Link to="/buscar"><SearchIcon /><br/>Buscar</Link>
-            <Link to="/menu"><MenuIcon /><br/>Menu</Link>
+            <Link to="/FrontEcorenda/user"><HomeIcon /><br/>Inicio</Link>
+            <Link to="/FrontEcorenda/buscar"><SearchIcon /><br/>Buscar</Link>
+            <Link to="/FrontEcorenda/menu"><MenuIcon /><br/>Menu</Link>
         </nav>
     )
 }
