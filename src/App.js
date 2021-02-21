@@ -28,7 +28,7 @@ export default function App() {
         </Header>
       <Body>
         <Switch>
-          <Route path="/" component={ViewHome} exact/>
+          {/* <Route path="/" component={ViewHome} exact/> */}
           <Route path="/FrontEcorenda" component={ViewHome} exact/>
           <Route path="/buscar" component={ViewBusca} exact />
           <Route path="/agendamento" component={Agendamento} exact />
@@ -39,7 +39,7 @@ export default function App() {
           <Route path="/atualizar" component={AtualizarPerfil} exact />
           <Route path='/menu' component={ViewMenu} />
           <Route path='/contato' component={ViewContato} />
-          <Route path='/adm' component={Adm} />
+          <Route path='/FrontEcorenda/adm' component={Adm} />
         </Switch>
       </Body>
     </div>
