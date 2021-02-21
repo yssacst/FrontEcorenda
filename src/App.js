@@ -39,7 +39,7 @@ export default function App() {
           <Route path="/atualizar" component={AtualizarPerfil} exact />
           <Route path='/menu' component={ViewMenu} />
           <Route path='/contato' component={ViewContato} />
-          <Route path='/FrontEcorenda/adm' component={Adm} />
+          <Route path='/adm' component={Adm} />
         </Switch>
       </Body>
     </div>
